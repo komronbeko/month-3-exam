@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="order-structure">
+            <div>
+                <h2>Pizza order</h2>
+            </div>
+            <form class="form">
+                <input type="text" placeholder="User name" required class="name-input">
+                <input type="number" placeholder="Phone number" required class="number-input">
+                <input type="text" placeholder="User address" required class="adress-input">
+                <div class="thickness">
+                    <h3>
+                        Dough thickness:
+                    </h3>
+                    <select id="select">
+                        <option value="none">none</option>
+                        <option value="thin">Thin</option>
+                        <option value="medium">Medium</option>
+                        <option value="thick">Thick</option>
+                    </select>
+                </div>
+                <div class="size">
+                    <strong>Size:</strong>
+                    <label class="Size-radio">
+                        <input type="radio" name="size" value="25"/>
+                        <div class="custom-radio">
+                            <p>25cm</p>
+                        </div>
+                    </label>
+                    <label class="Size-radio">
+                        <input type="radio" name="size" value="30" />
+                        <div class="custom-radio">
+                            <p>30cm</p>
+                        </div>
+                    </label>
+                    <label class="Size-radio">
+                        <input type="radio" name="size" value="35" />
+                        <div class="custom-radio">
+                            <p>35cm</p>
+                        </div>
+                    </label>
+                </div>
+                <div class="ingredients">
+                    <div>
+                        <h3>On Pizza:</h3>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" name="ingredients" class="checbox-input" value="tomato">
+                            Tomato
+                        </label>
+                        <label>
+                            <input type="checkbox" name="ingredients" class="checbox-input" value="Pickled Cucumber">
+                            Pickled Cucumber
+                        </label>
+                        <label>
+                            <input type="checkbox" name="ingredients" class="checbox-input" value="Turkey meat">
+                            Turkey meat
+                        </label>
+                        <label>
+                            <input type="checkbox" name="ingredients" class="checbox-input" value="Mushroom">
+                            Mushroom
+                        </label>
+                        <label>
+                            <input type="checkbox" name="ingredients" class="checbox-input" value="Olive">
+                            Olive
+                        </label>
+                        <label>
+                            <input type="checkbox" name="ingredients" class="checbox-input" value="Horse meat">
+                            Horse meat
+                        </label>
+                    </div>
+                </div>
+                <div class="adds">
+                    <div>
+                        <h3>Add:</h3>
+                    </div>
+                    <div class="checkbox-2">
+                        <label>
+                            <input type="checkbox" name="adds" class="add-input" value="Pepper">
+                            Pepper
+                        </label>
+                        <label>
+                            <input type="checkbox" name="adds" class="add-input" value="Sausages">
+                            Sausages
+                        </label>
+                    </div>
+                </div>
+
+
+
+                <button class="submit">Save</button>
+            </form>
+        </div>
+
+        <div class="results">
+
+        </div>
+    </div>
+
+    <div class="modal">
+        <div class="modal-content">
+            <button class="close-btn">X</button>
+            <p>Your order have been successfully accepted</p>
+        </div>
+    </div>
+
+
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
